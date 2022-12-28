@@ -108,7 +108,7 @@ export default function Home() {
           <Image src={consulting} width={100} height={100} />
         </div>
         <section>
-          
+          <p> testing repo</p>
         </section>
       </main>
     </>
