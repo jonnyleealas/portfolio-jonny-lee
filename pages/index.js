@@ -3,6 +3,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 import Image from 'next/legacy/image';
 import deved from '../public/dev-ed-wave.png'
+import jonny from '../public/jonnypic.jpg';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
@@ -13,6 +14,8 @@ import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
 import { useState } from 'react';
+
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
@@ -54,7 +57,7 @@ export default function Home() {
             <AiFillTwitterCircle />
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={deved} layout='fill' objectFit='cover' />
+            <Image src={jonny} layout='fill' objectFit='cover' />
           </div>
         </section>
         <div>
