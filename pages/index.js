@@ -4,8 +4,9 @@ import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub, AiFillGoogleCircle }
 import Image from 'next/legacy/image';
 import deved from '../public/dev-ed-wave.png'
 import jonny from '../public/jonnypic.jpg';
-import design from '../public/design.png';
+import pirate from '../public/pirate.png';
 import code from '../public/code.png';
+import computer from '../public/computer.png';
 import consulting from '../public/consulting.png';
 import web1 from '../public/web1.png';
 import web2 from '../public/web2.png';
@@ -38,11 +39,11 @@ export default function Home() {
               </li>
               <li><a href="#"></a></li>
               <li><a className='bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://docs.google.com/document/d/1cMxd7rDfAk6FPf1cL5yVHLxSC1r6yRTfhcyYXPUgtsY/view">Resume</a> </li>
-              <li><a className='bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">LinkedIn</a></li>
+              <li><a className='bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://www.linkedin.com/in/jonnyleealas/">LinkedIn</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Jonathon Lee</h2>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Test Page</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Software Developer and IT Support</h3>
 
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-200'>
@@ -55,7 +56,7 @@ export default function Home() {
 
           </div>
             
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200'>
 
           <Link href="https://www.linkedin.com/in/jonnyleealas/"><AiFillLinkedin /></Link>
             
@@ -64,18 +65,18 @@ export default function Home() {
           </div>
             
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={jonny} layout='fill' objectFit='cover' />
+            <Image layout='fill' objectFit='cover' />
           </div>
         </section>
         <div>
           <h3 className='text-3xl py-1'>Services I Offer</h3>
-          <p className='text-md py-5 leading-8 text-gray-600'>
+          <p className='text-md py-5 leading-8 text-gray-600 dark:text-gray-200'>
             Since the beginning of my journey as a freelance developer, Ive done remote work for
             <span className='text-teal-500'>blah blah blah</span> and consulted for <span className='text-teal-500'>blah blah blah</span>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
-          <p className='text-md py-5 leading-8 text-gray-600'>
+          <p className='text-md py-5 leading-8 text-gray-600 dark:text-gray-200'>
             Since the beginning of my journey as a freelance developer, Ive done remote work for
             <span className='text-teal-500'>blah blah blah</span> and consulted for <span className='text-teal-500'>blah blah blah</span>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -94,15 +95,17 @@ export default function Home() {
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
           <h4 className='py- text-teal-600'>Design Tools used</h4>
-          <p className='text-gray-500' py-1 >Photoshop</p>
-          <p className='text-gray-500' py-1 >Figma</p>
-          <p className='text-gray-500' py-1 >Illustrator</p>
-          <Image src={design} width={100} height={100} />
+          <p className='text-gray-500 dark:text-gray-300' py-1 >Photoshop</p>
+          <p className='text-gray-500 dark:text-gray-300' py-1 >Figma</p>
+          <p className='text-gray-500 dark:text-gray-300' py-1 >Illustrator</p>
+          <Image src={pirate} width={100} height={100} />
           <Image src={consulting} width={100} height={100} />
         </div>
+
         <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700'>
-          <Image src={code} width={100} height={100} />
-          <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+        <Link href='https://pirate-adventure.surge.sh/'>
+          <Image src={pirate} width={100} height={100} />
+          <h3 className='text-lg font-medium pt-8 pb-2'>Pirate Adventure</h3>
           <p className='text-md py-5 leading-8 text-gray-600 dark:text-gray-200'>
             Since the beginning of my journey as a freelance developer, Ive done remote work for
             <span className='text-teal-500'>blah blah blah</span> and consulted for <span className='text-teal-500'>blah blah blah</span>
@@ -110,15 +113,18 @@ export default function Home() {
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
           <h4 className='py- text-teal-600'>Design Tools used</h4>
-          <p className='text-gray-500' py-1 >Photoshop</p>
-          <p className='text-gray-500' py-1 >Figma</p>
-          <p className='text-gray-500' py-1 >Illustrator</p>
-          <Image src={design} width={100} height={100} />
+          <p className='text-gray-500 dark:text-gray-300' py-1 >Photoshop</p>
+          <p className='text-gray-500 dark:text-gray-300' py-1 >Figma</p>
+          <p className='text-gray-500 dark:text-gray-300' py-1 >Illustrator</p>
+          <Image src={pirate} width={100} height={100} />
           <Image src={consulting} width={100} height={100} />
+        </Link>
         </div>
         <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-700'>
-          <Image src={code} width={100} height={100} />
-          <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+          <Link href='https://sites.google.com/view/firstpcbuild/home?pli=1'>
+          
+          <Image src={computer} width={100} height={100} />
+          <h3 className='text-lg font-medium pt-8 pb-2'>Building My First Computer</h3>
           <p className='text-md py-5 leading-8 text-gray-600 dark:text-gray-200'>
             Since the beginning of my journey as a freelance developer, Ive done remote work for
             <span className='text-teal-500'>blah blah blah</span> and consulted for <span className='text-teal-500'>blah blah blah</span>
@@ -126,18 +132,19 @@ export default function Home() {
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
           <h4 className='py- text-teal-600'>Design Tools used</h4>
-          <p className='text-gray-500' py-1 >Photoshop</p>
-          <p className='text-gray-500' py-1 >Figma</p>
-          <p className='text-gray-500' py-1 >Illustrator</p>
-          <Image src={design} width={100} height={100} />
+          <p className='text-gray-500 dark:text-gray-300' py-1 >Photoshop</p>
+          <p className='text-gray-500 dark:text-gray-300' py-1 >Figma</p>
+          <p className='text-gray-500 dark:text-gray-300' py-1 >Illustrator</p>
+          <Image src={pirate} width={100} height={100} />
           <Image src={consulting} width={100} height={100} />
+          </Link>
         </div>
            
         </div>
         <section>
           <div>
             <h3 className='text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-5 leading-8 text-gray-600'>
+            <p className='text-md py-5 leading-8 text-gray-600 dark:text-gray-200'>
               Since the beginning of my journey as a freelance developer, Ive done remote work for
               <span className='text-teal-500'>blah blah blah</span> and consulted for <span className='text-teal-500'>blah blah blah</span>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
