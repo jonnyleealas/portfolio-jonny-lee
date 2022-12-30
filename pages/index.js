@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
+import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub, AiFillGoogleCircle } from 'react-icons/ai';
 import Image from 'next/legacy/image';
 import deved from '../public/dev-ed-wave.png'
 import jonny from '../public/jonnypic.jpg';
@@ -14,11 +14,14 @@ import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
 import { useState } from 'react';
+import Link from 'next/link'
+
 
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
+   
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Jonathon Lee Portfolio</title>
@@ -34,7 +37,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl' />
               </li>
               <li><a href="#"></a></li>
-              <li><a className='bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a> </li>
+              <li><a className='bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://docs.google.com/document/d/1cMxd7rDfAk6FPf1cL5yVHLxSC1r6yRTfhcyYXPUgtsY/view">Resume</a> </li>
               <li><a className='bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">LinkedIn</a></li>
             </ul>
           </nav>
@@ -51,11 +54,15 @@ export default function Home() {
             </p>
 
           </div>
+            
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillLinkedin />
-            <AiFillYoutube />
-            <AiFillTwitterCircle />
+
+          <Link href="https://www.linkedin.com/in/jonnyleealas/"><AiFillLinkedin /></Link>
+            
+            <Link href="https://github.com/jonnyleealas"><AiFillGithub /></Link>
+            <AiFillGoogleCircle />
           </div>
+            
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
             <Image src={jonny} layout='fill' objectFit='cover' />
           </div>
@@ -149,5 +156,6 @@ export default function Home() {
         </section>
       </main>
     </div>
+   
   )
 }
